@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu.menu_tambah_relasi.TamabahRelasiFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/profiletambah" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textNamaLengkap"
+                style="@style/parent"
+                android:layout_marginTop="30dp">
+
+                <EditText
+                    android:id="@+id/et_namalengkap"
+                    style="@style/modifiedEditText"
+                    android:inputType="text"
+                    android:hint="Nama Lengkap"
+                    android:maxLines="1"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textNomerWhatsapp"
+                style="@style/parent"
+                android:layout_marginTop="30dp">
+
+                <EditText
+                    android:id="@+id/et_nomerWhatsapp"
+                    style="@style/modifiedEditText"
+                    android:hint="Nomer Whatsapp"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textEmail"
+                style="@style/parent"
+                android:layout_marginTop="30dp">
+
+                <EditText
+                    android:id="@+id/et_Email"
+                    style="@style/modifiedEditText"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="30dp">
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textBidang1"
+                    android:layout_weight="2"
+                    style="@style/parent">
+
+
+                    <EditText
+                        android:id="@+id/et_bidang1"
+                        style="@style/modifiedEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Bidang"
+                        android:maxLines="1"
+                        android:textSize="20sp" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/addBidang1"
+                    android:layout_width="26dp"
+                    android:layout_height="30dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/ic_addgreen" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="30dp">
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textBidang2"
+                    android:layout_weight="2"
+                    style="@style/parent">
+
+
+                    <EditText
+                        android:id="@+id/et_bidang2"
+                        style="@style/modifiedEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Bidang"
+                        android:maxLines="1"
+                        android:textSize="20sp" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/addBidang2"
+                    android:layout_width="26dp"
+                    android:layout_height="30dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/ic_addgreen" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="30dp">
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textBidang3"
+                android:layout_weight="2"
+                style="@style/parent">
+
+
+                <EditText
+                    android:id="@+id/et_bidang3"
+                    style="@style/modifiedEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Bidang"
+                    android:maxLines="1"
+                    android:textSize="20sp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textKota"
+                style="@style/parent"
+                android:layout_marginTop="30dp">
+
+                <EditText
+                    android:id="@+id/et_kota"
+                    style="@style/modifiedEditText"
+                    android:hint="Kota"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:id="@+id/textNamaPerushaan"-->
+<!--                style="@style/parent"-->
+<!--                android:layout_marginTop="30dp">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/et_namaperusahaan"-->
+<!--                    style="@style/modifiedEditText"-->
+<!--                    android:hint="Nama Perusahaan"-->
+<!--                    android:inputType="text"-->
+<!--                    android:maxLines="1"-->
+<!--                    android:textSize="20sp" />-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+            ///////////////////////////////////////////
+            <LinearLayout
+                android:id="@+id/llp1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="30dp">
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textPerusahaan1"
+                    android:layout_weight="2"
+                    style="@style/parent">
+
+
+                    <EditText
+                        android:id="@+id/et_perusahaan1"
+                        style="@style/modifiedEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Nama Perusahaan"
+                        android:maxLines="1"
+                        android:textSize="20sp" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/addPerusahaan1"
+                    android:layout_width="26dp"
+                    android:layout_height="30dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/ic_addgreen" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/llp2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="30dp">
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textPerusahaan2"
+                    android:layout_weight="2"
+                    style="@style/parent">
+
+
+                    <EditText
+                        android:id="@+id/et_perusahaan2"
+                        style="@style/modifiedEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Nama Perusahaan"
+                        android:maxLines="1"
+                        android:textSize="20sp" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/addPerusahaan2"
+                    android:layout_width="26dp"
+                    android:layout_height="30dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/ic_addgreen" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llp3"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="30dp">
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textPerusahaan3"
+                    android:layout_weight="2"
+                    style="@style/parent">
+
+
+                    <EditText
+                        android:id="@+id/et_perusahaan3"
+                        style="@style/modifiedEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Nama Perusahaan"
+                        android:maxLines="1"
+                        android:textSize="20sp" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            //////////////////////////////////////////
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textPontensi"
+                style="@style/parent"
+                android:layout_marginTop="30dp">
+
+                <EditText
+                    android:id="@+id/et_potensi"
+                    style="@style/modifiedEditText"
+                    android:hint="Pontensi"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textTantangan"
+                style="@style/parent"
+                android:layout_marginTop="30dp">
+
+                <EditText
+                    android:id="@+id/et_tantangan"
+                    style="@style/modifiedEditText"
+                    android:hint="Tantangan"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textKeterangan"
+                style="@style/parent"
+                android:layout_marginTop="30dp">
+
+                <EditText
+                    android:id="@+id/et_keterangan"
+                    style="@style/modifiedEditText"
+                    android:hint="Keterangan"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnTamabahData"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btngreen"
+                android:text="Tambah Data"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

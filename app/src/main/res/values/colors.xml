@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#FFFFFF</color>
+
+    <!-- Custom Color -->
+    <color name="colorLightRed">#f99234</color>
+    <color name="colorBlack">#99000000</color>
+    <color name="colorTransBlack">#87000000</color>
+    <color name="colorLightGray">#DBEEE8</color>
+    <color name="colorPrimaryText">@color/colorOrange</color>
+    <color name="colorLoginBk">#f0f0f0</color>
+    <color name="colorabuabu">#181818</color>
+    <color name="colorText">#fff</color>
+    <color name="colorOrg">#f04c4c</color>
+    <color name="bluemap">#5069A8</color>
+
+    <color name="colorTabProfil">#EEEEEE</color>
+    <color name="colorBlue">#655BA6</color>
+    <color name="colorOrange">#FDC777</color>
+
+    <!-- Color Menu Featured -->
+    <color name="colorBlueFeatured">#7072F9</color>
+    <color name="colorPurpleFeatured">#A970F9</color>
+    <color name="colorYellowFeatured">#F9D270</color>
+    <color name="colorGreenFeatured">#70F980</color>
+
+    <!-- Color Menu PPDB -->
+    <color name="colorYellowPPDB">#F4BB65</color>
+    <color name="colorGreenPPDB">#65F490</color>
+
+    <!-- Color Menu School -->
+    <color name="colorYellowSchool">#FDF86D</color>
+
+
+
+
+<!--Gardasi wana bahan-->
+    <color name="purple_500">#9c27b0</color>
+    <color name="deep_purple_500">#673ab7</color>
+    <color name="deep_blue_500">#355484</color>
+    <color name="indigo_500">#3f51b5</color>
+    <color name="blue_500">#2196f3</color>
+    <color name="cyan_500">#00bcd4</color>
+    <color name="light_blue_500">#03a9f4</color>
+    <color name="abu">#649db7</color>
+
+</resources>

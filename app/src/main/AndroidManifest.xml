@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sinergimuslim">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!--        android:networkSecurityConfig="@xml/network_security_config"-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".TantanganAplikasiActivity"
+            android:theme="@style/AppTheme.NoActionBarFull"></activity>
+        <activity android:name=".menu.menu_data_anggota.DataAnggotaFragment" />
+        <activity
+            android:name=".DataRelasiActivity"
+            android:theme="@style/AppTheme.NoActionBarFull" />
+        <activity android:name=".menu.menu_tambah_relasi.TamabahRelasiFragment" />
+        <activity android:name=".menu.menu_data_relasi.DataRelasiFragment" />
+        <activity android:name=".menu.menu_pengaturan.PengaturanFragment" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBarFull" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBarFull" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppTheme.NoActionBarFull">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

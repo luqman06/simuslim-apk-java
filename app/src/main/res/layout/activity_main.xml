@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="3dp"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imageMap"
+                        android:layout_width="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_locationutama"/>
+
+                    <TextView
+                        android:id="@+id/kabupatenPEngaturan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:drawablePadding="20dp"
+                        android:textColor="@color/bluemap"
+                        android:text="- - - -"
+                        android:textStyle="bold" />
+                    <!--                    <ImageView-->
+<!--                        android:id="@+id/location"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="29dp"-->
+<!--                        android:src="@drawable/location" />-->
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+<!--            <HorizontalScrollView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:id="@+id/hs_main"-->
+<!--                android:layout_height="wrap_content">-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="625dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    >-->
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+              app:tabMode="scrollable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+<!--                </LinearLayout>-->
+<!--            </HorizontalScrollView>-->
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

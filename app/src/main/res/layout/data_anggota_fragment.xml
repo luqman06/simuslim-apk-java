@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".menu.menu_data_anggota.DataAnggotaFragment">
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_rectangle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+<!--            <androidx.appcompat.widget.SearchView-->
+<!--                android:id="@+id/search"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@color/colorPrimaryDark"-->
+<!--                android:focusable="false"-->
+<!--                app:iconifiedByDefault="false"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:queryHint="Search Distributors..." />-->
+
+            <SearchView
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+<!--            <ImageView-->
+<!--                android:id="@+id/img_serchAnggota"-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:background="@drawable/ic_search"/>-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/ed_searchAnggota"-->
+<!--                android:layout_width="160dp"-->
+<!--                android:hint="Cari Anggota"-->
+<!--                android:filterTouchesWhenObscured="true"-->
+<!--                style="@style/modifiedEditText"-->
+<!--                android:layout_height="wrap_content"/>-->
+<!--                />-->
+        </LinearLayout>
+
+    </RelativeLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/dataAnggtaSwipe"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_anggota"
+        android:paddingTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

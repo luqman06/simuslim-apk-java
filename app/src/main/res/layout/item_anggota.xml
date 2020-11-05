@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/bgpengaturan">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/im_anggota"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/ic_group"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_namaAnggota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Anggota"
+                android:textSize="13sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="@drawable/ic_whatsapp"/>
+            <TextView
+                android:id="@+id/tv_noWa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="088288288282"
+                android:textSize="12sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="@drawable/ic_locatiunred"/>
+            <TextView
+                android:id="@+id/tv_daerahAnggota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D.I. Yogyakarta"
+                android:textSize="12sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
